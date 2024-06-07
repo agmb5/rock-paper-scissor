@@ -29,21 +29,24 @@ newGame.textContent= "Start a new Game"
 
 let computerSelection = getComputerChoice()
 
-/* const solution = document.querySelector(".solution");
+const solution = document.querySelector(".solution");
 let bau = document.querySelector(".second");
 const dog = document.querySelector(".miao");
 
 const checkbox = document.querySelector("input[id=toggleswitch]");
-checkbox.addEventListener("change",function(){
-    if (this.checked) {solution.style.cssText = "border:1px solid;border-color:gray;width: 210px;height:50px;border-radius: 5px";bau.textContent=`Computer chose ${computerSelection}`}
-    else {dog.removeChild(solution)}
-})
-*/
+let cheater=function(){
+    if (checkbox.checked) {solution.style.cssText = "border:1px solid;border-color:gray;width: 285px;height:50px;border-radius: 5px";bau.textContent=`In this round Computer chose ${computerSelection}`}
+    else {solution.style.cssText = "border:1px solid;border-color:white";bau.textContent=""}
+}
+checkbox.addEventListener("change",cheater)
+
 
 console.log("computer chose " + computerSelection)
 
 rockbtn.addEventListener("click", function() {
     humanSelection = "rock";
+    
+    
     if (computerSelection == "rock") {result.textContent = "Computer chose rock";readResult.textContent = "Tie!";cpScore++;huScore++; cpScore1.textContent = cpScore;huScore1.textContent = huScore}
     else if (computerSelection =="paper") {result.textContent = "Computer chose paper";readResult.textContent = "You Lose!";cpScore++;cpScore1.textContent = cpScore;huScore1.textContent = huScore}
     else  {result.textContent = "Computer chose scissor";readResult.textContent="You Win!";huScore++;cpScore1.textContent = cpScore;huScore1.textContent = huScore}
