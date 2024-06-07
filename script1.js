@@ -34,11 +34,11 @@ let bau = document.querySelector(".second");
 const dog = document.querySelector(".miao");
 
 const checkbox = document.querySelector("input[id=toggleswitch]");
-let cheater=function(){
-    if (checkbox.checked) {solution.style.cssText = "border:1px solid;border-color:gray;width: 285px;height:50px;border-radius: 5px";bau.textContent=`In this round Computer chose ${computerSelection}`}
+
+checkbox.addEventListener("change",function(){
+    if (this.checked) {solution.style.cssText = "border:1px solid;border-color:gray;width: 285px;height:50px;border-radius: 5px";bau.textContent=`In this round Computer chose ${computerSelection}`}
     else {solution.style.cssText = "border:1px solid;border-color:white";bau.textContent=""}
-}
-checkbox.addEventListener("change",cheater)
+})
 
 
 console.log("computer chose " + computerSelection)
