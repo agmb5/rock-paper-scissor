@@ -1,0 +1,68 @@
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+h2, .buttons, .results,.result, .readResult,.newGame,.finalResult, .solution{
+    display: flex;
+    justify-content: center;
+}
+
+.buttons {
+    gap: 15px;
+   
+}
+
+button{
+    width: 70px;
+    height: 50px;
+    border-radius: 12px;
+}
+
+.results{
+    flex-direction: column;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.theNewGameButton {
+    width: 100px;
+}
+
+.theNewGameButton:hover{
+    background-color: peru;
+}
+
+.finalResult{
+    font-size: large;
+    font-weight: bold;
+}
+
+.joker {
+    display: flex;
+    justify-content: center;
+}
+
+.idn {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 150px;
+}
+
+/*.solution{
+    border:1px solid;
+    border-color: gray;
+    width: 210px;
+    height: 50px;
+    border-radius: 5px;
+}*/
+
+.miao {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 150px;
+}

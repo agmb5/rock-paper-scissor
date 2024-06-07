@@ -23,11 +23,22 @@ let result = document.querySelector(".result");
 let finalResult = document.querySelector(".finalResult");
 const div = document.querySelector(".newGame");
 const newGame = document.createElement("button");
+newGame.classList.add("theNewGameButton")
 newGame.textContent= "Start a new Game"
 
 
 let computerSelection = getComputerChoice()
 
+/* const solution = document.querySelector(".solution");
+let bau = document.querySelector(".second");
+const dog = document.querySelector(".miao");
+
+const checkbox = document.querySelector("input[id=toggleswitch]");
+checkbox.addEventListener("change",function(){
+    if (this.checked) {solution.style.cssText = "border:1px solid;border-color:gray;width: 210px;height:50px;border-radius: 5px";bau.textContent=`Computer chose ${computerSelection}`}
+    else {dog.removeChild(solution)}
+})
+*/
 
 console.log("computer chose " + computerSelection)
 
